@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "846349359154",
+    "firebase_url": "https://capstone-car.firebaseio.com",
+    "project_id": "capstone-car",
+    "storage_bucket": "capstone-car.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846349359154:android:b7b5857a440b1255ab442b",
+        "android_client_info": {
+          "package_name": "com.example.capstone_car"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846349359154-iafgdutnpm2sa1foeosve6hsviu87k56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC922OxDJJBfEEcuqZokWfSA76d4207hqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846349359154-iafgdutnpm2sa1foeosve6hsviu87k56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04befe">
+    <!--    <com.jgabrielfreitas.core.BlurImageView-->
+    <!--    android:id="@+id/myBlurImage"-->
+    <!--    android:src="@drawable/mainimage"-->
+    <!--    android:scaleType="centerCrop"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"/>-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:src="@drawable/mainimage"-->
+    <!--        android:scaleType="centerCrop"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="바리바리"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:layout_marginTop="120dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editText_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/login_round"
+                android:padding="10dp"
+                android:hint="ID"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/editText_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_round"
+                android:padding="10dp"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"/>
+
+            <android.widget.Button
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/call_buttonshape"
+                android:layout_marginTop="18dp"
+                android:text="LOGIN"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/button_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아직회원이아니신가요?"
+                android:layout_gravity="center"
+                android:textColor="#ffff"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

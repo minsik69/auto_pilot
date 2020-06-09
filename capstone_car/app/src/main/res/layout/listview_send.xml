@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/button_round"
+    android:elevation="3dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView_userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="admin"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:paddingLeft="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_startPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출발지"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:id="@+id/textView_endPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="목적지"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예상소요시간"
+            android:textSize="14dp"
+            android:paddingLeft="15dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상태"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="55dp" />
+
+        <android.widget.Button
+            android:id="@+id/button_qr"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="QR코드"
+            android:textSize="11dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="#FFB319"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"/>
+    </FrameLayout>
+
+</LinearLayout>

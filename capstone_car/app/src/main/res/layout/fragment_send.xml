@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SendFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--    <ListView-->
+    <!--        android:id="@+id/sendList"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:transcriptMode="alwaysScroll"-->
+    <!--        android:scrollbars="none"/>-->
+
+    <RelativeLayout
+        android:id="@+id/layout_nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView_nothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앗!"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 진행중인 배달이 없습니다."
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/textView_nothing"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sendList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/button_refresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/refresh_button_round"
+        android:drawableLeft="@drawable/ic_refresh"
+        android:gravity="center"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="105dp"
+        android:paddingLeft="13dp"/>
+</FrameLayout>

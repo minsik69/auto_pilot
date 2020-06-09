@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EndFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/select_term"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tablayout"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
+
+        <android.widget.Button
+            android:id="@+id/button_refresh"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="전체"
+            android:textColor="#000"
+            android:textSize="11dp"
+            android:background="@drawable/end_button_round" />
+
+        <android.widget.Button
+            android:id="@+id/button_week"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:background="@drawable/end_button_round"
+            android:textSize="11dp"
+            android:textColor="#000"
+            android:paddingBottom="0dp"
+            android:text="1주일"/>
+
+        <android.widget.Button
+            android:id="@+id/button_month"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:background="@drawable/end_button_round"
+            android:textSize="11dp"
+            android:textColor="#000"
+            android:paddingBottom="0dp"
+            android:text="1개월" />
+
+        <android.widget.Button
+            android:id="@+id/button_sixmonth"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:background="@drawable/end_button_round"
+            android:textSize="11dp"
+            android:textColor="#000"
+            android:paddingBottom="0dp"
+            android:text="6개월"/>
+
+        <android.widget.Button
+            android:id="@+id/button_check"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:background="@drawable/end_button_round"
+            android:textSize="11dp"
+            android:textColor="#000"
+            android:paddingBottom="0dp"
+            android:text="직접입력" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_term"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/date_stroke_round"
+        android:layout_gravity="center_horizontal|center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/calendar"
+            android:layout_gravity="center_vertical"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/textView_startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜 선택하기"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_dateCheck"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/endList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"/>
+
+</LinearLayout>

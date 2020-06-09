@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:text="회원가입"
+        android:textSize="44dp"
+        android:textColor="#ffff"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editText_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/login_round"
+                android:padding="10dp"
+                android:hint="ID"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editText_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_round"
+                android:padding="10dp"
+                android:hint="PASSWORD"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_round"
+                android:padding="10dp"
+                android:hint="NAME"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editText_tel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_round"
+                android:hint="PHONE NUMBER"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editText_univ"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_round"
+                android:padding="10dp"
+                android:hint="UNIVERSITY"
+                android:completionThreshold="1"
+                android:completionHint="해당하는 학교명을 선택하세요." />
+
+
+            <Button
+                android:id="@+id/button_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round"
+                android:layout_marginTop="18dp"
+                android:text="SIGN UP" />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그인하기"
+                android:layout_gravity="center"
+                android:textColor="#ffff"
+                style="?android:attr/borderlessButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

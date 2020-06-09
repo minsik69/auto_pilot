@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">capstone_car</string>
+    <string name="default_notification_channel_id">lecture.fcmtest.ysy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="조회범위선택">
+        <item>전체</item>
+        <item>보낸 배달</item>
+        <item>받은 배달</item>
+    </string-array>
+</resources>

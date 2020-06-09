@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04befe"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="바리바리"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:id="@+id/main_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/textView_logo">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/textView_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="admin"
+            android:textSize="13dp"
+            android:layout_below="@+id/textView_logo"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/main_linearlayout"
+        android:background="#00ffffff"
+        app:tabBackground="@drawable/tab_selected"
+        app:tabSelectedTextColor="#000000"
+        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorFullWidth="true">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보내는 배달" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="받는 배달" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료된 배달" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablayout"
+        android:layout_alignEnd="@+id/button_call"
+        android:background="#ffffff"/>
+
+    <android.widget.Button
+        android:id="@+id/button_call"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:text="호출하기"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#FFB319"/>
+
+</RelativeLayout>
